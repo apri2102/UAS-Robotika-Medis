@@ -88,15 +88,18 @@
   </p>
   
   <h3>Risiko Keterlambatan Penanganan</h3>
-   Tekanan yang tidak terpantau dapat berkembang menjadi masalah serius apabila penanganan dilakukan terlambat. Keterlambatan dalam mengetahui perubahan tekanan tubuh pasien dapat memperburuk kondisi klinis dan memperpanjang masa perawatan.
+Tekanan yang tidak terpantau dapat berkembang menjadi masalah serius apabila penanganan dilakukan terlambat. Keterlambatan dalam mengetahui perubahan tekanan tubuh pasien dapat memperburuk kondisi klinis dan memperpanjang masa perawatan.
+   </p>
    
    <h3>Keterbatasan Pemantauan Manual</h3>
    </p>
-   Pemantauan tekanan tubuh pasien secara manual memiliki keterbatasan karena tidak dapat dilakukan secara kontinu dan sangat bergantung pada kehadiran serta ketelitian tenaga medis. Hal ini meningkatkan risiko terlewatnya kondisi abnormal pada pasien.
-    
+Pemantauan tekanan tubuh pasien secara manual memiliki keterbatasan karena tidak dapat dilakukan secara kontinu dan sangat bergantung pada kehadiran serta ketelitian tenaga medis. Hal ini meningkatkan risiko terlewatnya kondisi abnormal pada pasien.
+   </p>
+   
   <h3>Kebutuhan Sistem Pemantauan Real-Time</h3>
    </p>
    Diperlukan sistem yang mampu melakukan pemantauan tekanan secara real-time dan berkelanjungan. Penggunaan sensor Force Sensitive Resistor (FSR)              memungkinkan pembacaan tekanan secara langsung dan responsif terhadap perubahan kondisi pasien.
+ </p>
  
   <h3>Sistem Peringatan Dini Berbasis Teknologi</h3>
    </p> 
