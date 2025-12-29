@@ -228,12 +228,12 @@
   <p>
     Python digunakan untuk pengembangan node ROS 2 dan monitoring data sensor.
   </p>
-  Pastikan Pyhton terinstal:
+    Pastikan Pyhton terinstal:
   <ul>
   <p>
-  <img src="images/gambar10.png"> 
+    <img src="images/gambar10.png"> 
   </p>
-  Jika belum, lakukan:
+    Jika belum, lakukan:
   <ul>
   <p>
    <img src="images/gambar11.png">   
