@@ -257,14 +257,19 @@ serta memberikan peringatan otomatis melalui buzzer ketika tekanan melebihi amba
   <li>Kabel USB</li>
 </ul>
 
-<h3>2. Pemberian Daya dan Koneksi</h3>
+<h3>2. Wiring Komponen</h3>
+<ul>
+  <img src="images/gambar12.png"> 
+</ul>
+
+<h3>3. Pemberian Daya dan Koneksi</h3>
 <ul>
   <li>Hubungkan ESP32 ke komputer menggunakan kabel USB</li>
   <li>Pastikan ESP32 mendapatkan daya</li>
   <li>LED indikator ESP32 menyala</li>
 </ul>
 
-<h3>3. Uji Koneksi Awal</h3>
+<h3>4. Uji Koneksi Awal</h3>
 <ul>
   <li>Buka Arduino IDE</li>
   <li>Pilih Board: ESP32 Dev Module</li>
