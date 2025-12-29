@@ -47,6 +47,9 @@
     }
   </style>
 </head>
+<div style="max-width:900px; margin:auto;">
+  <!-- semua konten di sini -->
+</div>
 
 <body>
 
