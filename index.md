@@ -333,11 +333,9 @@ serta memberikan peringatan otomatis melalui buzzer ketika tekanan melebihi amba
  <img src="images/gambar14.png"> 
  </p>
     
-    <h3>2. Buat ROS 2 Workspace</h3>
-    <pre><code>mkdir -p ~/incubator_ws/src
-cd ~/incubator_ws
-colcon build
-source install/setup.bash</code></pre>
+  <h3>2. Buat ROS 2 Workspace</h3>
+ <img src="images/gambar15.png"> 
+ </p>
 
     <h3>3. Buat Package ROS 2 (Python)</h3>
     <pre><code>cd ~/incubator_ws/src
