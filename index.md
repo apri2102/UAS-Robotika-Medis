@@ -257,8 +257,6 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
   </ul>
 </section>
 
-<section>
-  </header>
 <h2>Kendala dan Solusi</h2>
 <p>
     <b>Kendala:</b> Integrasi ESP32 dengan ROS2<br>
