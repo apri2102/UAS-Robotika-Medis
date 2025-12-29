@@ -128,7 +128,6 @@
     <b>Catatan:</b> Pastikan Windows sudah ter-update, virtualisasi aktif di BIOS,
     dan RAM minimal 8 GB.
   </p>
-  <p><i>(Gambar: Tampilan sistem Windows 11)</i></p>
 
   <h3>2. Mengaktifkan WSL 2 (Windows Subsystem for Linux)</h3>
   <p>
