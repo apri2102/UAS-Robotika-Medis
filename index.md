@@ -102,7 +102,7 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
 
 <h2>Diagram Alir Sistem</h2>
   <p>
-  <img src="images/gambar12.png">
+  <img src="images/gambar13.png">
   <p>
  <section> 
 
@@ -135,7 +135,6 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
     <li>Menjalankan Arduino IDE</li>
     <li>Menjalankan Docker Desktop</li>
     <li>Menjalankan WSL 2 sebagai jembatan ke Linux</li>
-  </ul>
   <p>
     <b>Catatan:</b> Pastikan Windows sudah ter-update, virtualisasi aktif di BIOS,
     dan RAM minimal 8 GB.
@@ -155,7 +154,6 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
     <li>Lakukan restart sistem komputer</li>
     <li>Pastikan WSL menggunakan versi 2</li>
     <img src="images/Gambar2.png">  
-  </ul>
 
   <h3>3. Instalasi Ubuntu 24.04 LTS</h3>
   <p>
@@ -167,7 +165,6 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
     <li>Unduh Ubuntu 24.04 LTS melalui Microsoft Store</li>
     <li>Lakukan Instal dan jalankan</li>
     <li>Buat username dan password pada Linux</li>
-  </ul>
 
   <h3>4. Update Sistem Ubuntu</h3>
   <p>
@@ -178,7 +175,6 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
   <ul>
   <p><i>
   <img src="images/Gambar3.png">
-   </ul>
 
   <h3>5. Instalasi ROS 2 Jazzy Jalisco</h3>
   <p>
@@ -207,9 +203,7 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
   <p>
     <li>Unduh Docker Desktop for Windows</li>
     <li>Lakukan instalasi dan restart jika diperlukan</li>
-  </ul>
     <img src="images/gambar8.png">
-  </ul>
 
   <h3>7. Menjalankan micro-ROS Agent</h3>
   <p>
@@ -220,7 +214,6 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
   <ul>
   <p>
   <img src="images/gambar9.png">
-  </ul>
 
   <h3>8. Instalasi Arduino IDE</h3>
   <p>
@@ -232,7 +225,6 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
     <li>Instalasi Arduino IDE</li>
     <li>Penambahan board ESP32</li>
     <li>Instalasi library pendukung sensor FSR</li>
-  </ul>
 
   <h3>9. Instalasi Python</h3>
   <p>
@@ -246,7 +238,6 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
   Jika belum, lakukan:
   <p>
    <img src="images/gambar11.png">   
-</section>
 
 <section>
   <h2>Langkah Pembuatan Sistem</h2>
