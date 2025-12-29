@@ -138,10 +138,10 @@
     <li>Membuka PowerShell sebagai Administrator</li>
     <li>Menjalankan perintah aktivasi WSL</li>
     <img src="images/gambar1.png">
-    <li>Melakukan restart sistem</li>
+    <li>Melakukan restart sistem komputer</li>
     <li>Memastikan WSL menggunakan versi 2</li>
+    <img src="images/gambar2.png">  
   </ul>
-  <p><i>(Gambar: Aktivasi WSL 2 melalui PowerShell)</i></p>
 
   <h3>3. Instalasi Ubuntu 24.04 LTS</h3>
   <p>
