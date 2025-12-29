@@ -298,7 +298,7 @@ serta memberikan peringatan otomatis melalui buzzer ketika tekanan melebihi amba
    <li>Menentukan pin digital untuk buzzer</li>
   <li>Menentukan nilai ambang batas tekanan</li>
     <p>Code Arduino Ide.</p>
- gambar
+ <img src="images/gambar28.png">
  </ul>
 
  <h3>3. Pembacaan Data Sensor</h3>
