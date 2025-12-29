@@ -97,8 +97,9 @@ Pemantauan tekanan tubuh pasien secara manual memiliki keterbatasan karena tidak
 Diperlukan sistem yang mampu melakukan pemantauan tekanan secara real-time dan berkelanjungan. Penggunaan sensor Force Sensitive Resistor (FSR) memungkinkan pembacaan tekanan secara langsung dan responsif terhadap perubahan kondisi pasien.
  
   <h3>Sistem Peringatan Dini Berbasis Teknologi</h3>
-   </p> 
 Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan dini ketika tekanan melebihi ambang batas tertentu. Integrasi dengan Robot Operating System 2 (ROS 2) memungkinkan sistem ini dikembangkan menjadi pemantauan terpusat, sehingga meningkatkan efektivitas dan kecepatan respon dalam pemantauan pasien.
+</p>
+</section>
 
 <h2>Diagram Alir Sistem</h2>
   <p>
@@ -106,16 +107,15 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
   <p>
  <section> 
 
-   <section>
-  <h5>Alat dan Bahan</h5>
-  <h6>Perangkat Keras (Hardware)</h6>
-  <ul>
+  <h2>Alat dan Bahan</h2>
+  <h3>Perangkat Keras (Hardware)</h3>
+  <p>
   <img src="images/tabel2.png"> 
   </ul>
 
-  <h6>Perangkat Lunak (Software)</h6>
-  <ul>
-    <img src="images/tabel1.png">
+  <h3>Perangkat Lunak (Software)</h3>
+  <p>
+  <img src="images/tabel1.png">
   </ul>
 </section>
 
