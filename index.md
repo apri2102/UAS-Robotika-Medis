@@ -375,7 +375,7 @@ serta memberikan peringatan otomatis melalui buzzer ketika tekanan melebihi amba
  </p> 
   
  <p>Cek status tekanan:</p>
- <img src="images/gambar24.png"> 
+ <img src="images/gambar26.png"> 
 
  <p>Cek alarm:</p>
  <img src="images/gambar25.png"> 
