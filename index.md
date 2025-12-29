@@ -179,7 +179,7 @@
   <ul>
   <p>
     <li>Menambahkan locale sistem</li>
-    <img src="images/Gambar4.png">
+    <img src="images/gambar4.png">
     <li>Menambahkan repository resmi ROS 2</li>
     <img src="images/gambar5.png">
     <li>Menginstal ROS 2 Jazzy Jalisco</li>
@@ -234,7 +234,6 @@
     <img src="images/gambar10.png"> 
   </p>
     Jika belum, lakukan:
-  <ul>
   <p>
    <img src="images/gambar11.png">   
 </section>
