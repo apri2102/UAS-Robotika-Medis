@@ -297,7 +297,8 @@ serta memberikan peringatan otomatis melalui buzzer ketika tekanan melebihi amba
   <li>Menentukan pin analog ESP32 untuk pembacaan sensor FSR</li>
    <li>Menentukan pin digital untuk buzzer</li>
   <li>Menentukan nilai ambang batas tekanan</li>
-  <p>Code Arduino Ide.</p>
+  
+    <p>Code Arduino Ide.</p>
   <img src="images/gambar12.png">
  </ul>
 
