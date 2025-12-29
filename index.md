@@ -381,6 +381,62 @@ serta memberikan peringatan otomatis melalui buzzer ketika tekanan melebihi amba
  <img src="images/gambar25.png"> 
 </section>
 
+<section>
+  <h2>Troubleshooting & Problem Solving</h2>
+ <p>
+  ⚠️ Tahap ini bertujuan untuk mengidentifikasi dan menangani permasalahan yang muncul selama proses
+   pengembangan Smart Incubator Monitoring System berbasis ESP32 + FSR + Buzzer, sehingga sistem
+   dapat berjalan stabil dan optimal.
+    </p>
+
+  <h3>✅ Tested Solutions – 5 Common Issues</h3>
+
+ <h4>🔴 Problem #1 – Arduino / ESP32 Gagal Dikompilasi</h4>
+ <p><strong>Penyebab:</strong> Board atau library belum terpasang dengan benar.</p>
+ <p><strong>Solusi:</strong></p>
+  <ul>
+     <li>Pastikan board ESP32 Dev Module sudah dipilih dengan benar pada Arduino IDE</li>
+     <li>Instal library sensor FSR jika diperlukan</li>
+     <li>Periksa koneksi kabel USB ke komputer</li>
+    </ul>
+
+ <h4>🔴 Problem #2 – Data FSR Tidak Terkirim ke ROS 2</h4>
+  <p><strong>Penyebab:</strong> Koneksi serial atau konfigurasi rosserial tidak sesuai.</p>
+  <p><strong>Solusi:</strong></p>
+   <ul>
+    <li>Periksa port serial yang digunakan oleh ESP32</li>
+   <li>Pastikan rosserial agent berjalan dan menggunakan port yang benar</li>
+    <li>Pastikan baudrate di ESP32 dan rosserial sama</li>
+    </ul>
+
+  <h4>🔴 Problem #3 – ROS 2 Subscriber / Publisher Tidak Merespons</h4>
+  <p><strong>Penyebab:</strong> Topic tidak aktif atau node belum berjalan.</p>
+ <p><strong>Solusi:</strong></p>
+  <ul>
+   <li>Cek topic yang tersedia dengan <code>ros2 topic list</code></li>
+   <li>Pastikan node FSRLogicNode dijalankan dan subscribe ke topic yang benar</li>
+  <li>Periksa koneksi jaringan jika menggunakan multiple device</li>
+    </ul>
+
+ <h4>🔴 Problem #4 – Buzzer Tidak Berfungsi</h4>
+ <p><strong>Penyebab:</strong> Pin buzzer salah atau logika ROS 2 alarm tidak diterima.</p>
+ <p><strong>Solusi:</strong></p>
+ <ul>
+    <li>Periksa pin digital yang digunakan untuk buzzer</li>
+    <li>Pastikan topic <code>/fsr/alarm</code> diterima oleh node buzzer</li>
+    <li>Gunakan Serial Monitor untuk memantau status FSR dan alarm</li>
+    </ul>
+    
+  <h4>🔴 Problem #5 – Nilai FSR Tidak Stabil / Noise Tinggi</h4>
+  <p><strong>Penyebab:</strong> Sensor FSR rawan noise dan variasi resistansi.</p>
+  <p><strong>Solusi:</strong></p>
+  <ul>
+        <li>Tambahkan filter software (misal rata-rata 3–5 pembacaan)</li>
+        <li>Periksa sambungan kabel dan breadboard</li>
+        <li>Kalibrasi threshold sesuai tekanan yang diinginkan</li>
+    </ul>
+</section>
+
     
 </body>
 </html>
