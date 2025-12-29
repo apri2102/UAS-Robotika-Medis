@@ -437,6 +437,11 @@ serta memberikan peringatan otomatis melalui buzzer ketika tekanan melebihi amba
     </ul>
 </section>
 
+<section>
+  <h2>Dokumentasi</h2>
+   <img src="images/gambar23.png"> 
+   <img src="images/gambar23.png"> 
+ </p> 
     
 </body>
 </html>
