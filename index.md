@@ -75,21 +75,34 @@
 <section>
   <h2>Pendahuluan</h2>
   <p>
-    Smart Pressure Alert System merupakan sistem monitoring tekanan yang
-    menggunakan sensor Force Sensitive Resistor (FSR), ESP32, dan middleware
-    Robot Operating System 2 (ROS2). Sistem ini dirancang untuk mendeteksi
-    tekanan dan memberikan peringatan berupa bunyi buzzer ketika tekanan
-    melebihi ambang batas tertentu.
+    Pemantauan kondisi pasien secara berkelanjutan merupakan aspek krusial dalam pelayanan kesehatan, khususnya pada pasien dengan mobilitas terbatas. Salah     satu permasalahan yang sering terjadi adalah tekanan berlebih pada bagian tubuh tertentu akibat posisi statis yang berlangsung lama, yang   dapat menyebabkan ketidaknyamanan hingga risiko luka tekan (pressure ulcer). Pemantauan manual oleh tenaga medis memiliki keterbatasan karena tidak dapat     dilakukan secara terus-menerus.
+    Seiring berkembangnya teknologi robotika medis dan sistem cerdas, diperlukan alat pemantauan yang mampu bekerja secara real-time, responsif, dan terintegrasi. Smart Pressure Alert System dikembangkan sebagai solusi berbasis sensor Force Sensitive Resistor (FSR) untuk mendeteksi perubahan tekanan secara akurat. Sistem ini dilengkapi dengan buzzer sebagai peringatan dini ketika tekanan melebihi ambang batas yang ditentukan.
+    Integrasi sistem dengan Robot Operating System 2 (ROS 2) memungkinkan pengolahan dan pengembangan data lebih lanjut, seperti monitoring terpusat dan analisis pola tekanan. Dengan desain yang sederhana dan biaya yang relatif rendah, sistem ini memiliki potensi sebagai alat bantu pemantauan pasien yang efektif, sekaligus mendukung penerapan teknologi robotika medis dalam lingkungan pelayanan kesehatan.
   </p>
 </section>
 
 </section>
 <h2>Pentingnya Smart Pressure Alert System</h2>
+ <h3>Tekanan Berlebih pada Pasien dengan Mobilitas Terbatas</h3>
   <p>
-    Pemantauan tekanan pada pasien merupakan hal penting, terutama untuk mencegah kondisi berisiko seperti posisi tubuh yang tidak tepat, tekanan berlebih,      dan potensi luka tekan (pressure ulcer) akibat posisi statis dalam waktu lama. Namun, pemantauan secara manual tidak selalu dapat dilakukan secara           terus-menerus.
-    Smart Pressure Alert System hadir sebagai solusi pemantauan real-time dan berkelanjutan menggunakan sensor Force Sensitive Resistor (FSR). Sistem ini        mampu mendeteksi tekanan berlebih secara dini dan memberikan peringatan langsung melalui buzzer, sehingga tindakan korektif dapat segera dilakukan           sebelum kondisi pasien memburuk.
-    Dengan integrasi ke ROS 2, sistem ini tidak hanya berfungsi sebagai alarm lokal, tetapi juga dapat dikembangkan menjadi sistem monitoring terpusat. Oleh     karena itu, alat ini memiliki urgensi sebagai sistem peringatan dini yang sederhana, responsif, dan aplikatif dalam pemantauan pasien.
+    Pasien dengan keterbatasan gerak, seperti pasien rawat inap atau rehabilitasi, berisiko mengalami tekanan berlebih pada bagian tubuh tertentu akibat posisi statis dalam waktu lama. Kondisi ini dapat menimbulkan ketidaknyamanan hingga luka tekan (pressure ulcer) apabila tidak terdeteksi sejak dini.
   </p>
+  
+  <h3>Risiko Keterlambatan Penanganan</h3>
+   </p>
+   Tekanan yang tidak terpantau dapat berkembang menjadi masalah serius apabila penanganan dilakukan terlambat. Keterlambatan dalam mengetahui perubahan tekanan tubuh pasien dapat memperburuk kondisi klinis dan memperpanjang masa perawatan.
+   
+   <h3>Keterbatasan Pemantauan Manual</h3>
+   </p>
+   Pemantauan tekanan tubuh pasien secara manual memiliki keterbatasan karena tidak dapat dilakukan secara kontinu dan sangat bergantung pada kehadiran serta ketelitian tenaga medis. Hal ini meningkatkan risiko terlewatnya kondisi abnormal pada pasien.
+    
+    <h3>Kebutuhan Sistem Pemantauan Real-Time</h3>
+   </p>
+   Diperlukan sistem yang mampu melakukan pemantauan tekanan secara real-time dan berkelanjungan. Penggunaan sensor Force Sensitive Resistor (FSR) memungkinkan pembacaan tekanan secara langsung dan responsif terhadap perubahan kondisi pasien.
+ 
+  <h3>Sistem Peringatan Dini Berbasis Teknologi</h3>
+   </p> 
+   Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan dini ketika tekanan melebihi ambang batas tertentu. Integrasi dengan Robot Operating System 2 (ROS 2) memungkinkan sistem ini dikembangkan menjadi pemantauan terpusat, sehingga meningkatkan efektivitas dan kecepatan respon dalam pemantauan pasien.
 </section>
 
 <section>
