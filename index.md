@@ -277,5 +277,59 @@ serta memberikan peringatan otomatis melalui buzzer ketika tekanan melebihi amba
   <li>Pastikan tidak ada error koneksi</li>
 </ul>
 
+
+        <section>
+            <h2>TAHAP III – Arduino Programming (ESP32 & Sensor FSR)</h2>
+            <p>
+                Tahap ini bertujuan untuk memprogram ESP32 agar dapat membaca data tekanan dari sensor Force Sensitive Resistor (FSR)
+                serta mengaktifkan buzzer sebagai alarm peringatan ketika tekanan yang terdeteksi melebihi ambang batas yang telah ditentukan.
+            </p>
+
+            <h3>1. Persiapan Software</h3>
+            <ul>
+                <li>Arduino IDE sudah terinstal</li>
+                <li>Board yang digunakan: ESP32 Dev Module</li>
+                <li>Port COM telah sesuai dengan ESP32 yang terhubung</li>
+                <li>Board ESP32 telah ditambahkan ke Arduino IDE</li>
+            </ul>
+
+            <h3>2. Inisialisasi Komponen</h3>
+            <p>Pada bagian awal program, dilakukan inisialisasi pin dan variabel yang digunakan.</p>
+            <ul>
+                <li>Menentukan pin analog ESP32 untuk pembacaan sensor FSR</li>
+                <li>Menentukan pin digital untuk buzzer</li>
+                <li>Menentukan nilai ambang batas tekanan</li>
+            <p>Code Arduino Ide.</p>
+             <img src="images/gambar12.png">
+            </ul>
+
+            <h3>3. Pembacaan Data Sensor</h3>
+            <p>ESP32 membaca nilai tekanan dari sensor FSR secara berkala melalui pin analog.</p>
+            <ul>
+                <li>Sensor FSR mengubah tekanan menjadi perubahan resistansi</li>
+                <li>Nilai resistansi dibaca sebagai tegangan analog oleh ESP32</li>
+                <li>Data disimpan dalam variabel <code>fsrValue</code></li>
+                <li>Pembacaan dilakukan setiap 500 ms</li>
+            </ul>
+
+            <h3>4. Logika Alarm Buzzer</h3>
+            <p>ESP32 mengevaluasi nilai tekanan berdasarkan ambang batas yang telah ditentukan.</p>
+            <ul>
+                <li>Tidak ada Tekanan → buzzer mati</li>
+                <li>Ada Tekanan → buzzer aktif</li>
+            </ul>
+            <p><strong>Catatan:</strong> Buzzer berfungsi sebagai alarm peringatan dini untuk membantu tenaga medis mendeteksi kondisi tekanan  pada pasien secara cepat.</p>
+        </section>
+
+        <!-- Button interaktif -->
+        <section>
+            <button onclick="showMessage()">Klik Saya</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Apri Ayu Lia</p>
+    </footer>
+    
 </body>
 </html>
