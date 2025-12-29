@@ -120,6 +120,7 @@
     seluruh proses pengembangan.
   </p>
   <ul>
+    <b>Langkah-langkah:</b> 
     <li>Menjalankan Arduino IDE</li>
     <li>Menjalankan Docker Desktop</li>
     <li>Menjalankan WSL 2 sebagai jembatan ke Linux</li>
@@ -149,7 +150,8 @@
   </p>
   <ul>
     <li>Mengunduh Ubuntu 24.04 LTS melalui Microsoft Store</li>
-    <li>Mengatur username dan password Linux</li>
+    <li>Lakukan Instal dan jalankan</li>
+    <li>Buat username dan password pada Linux</li>
   </ul>
   <p><i>(Gambar: Instalasi Ubuntu di WSL)</i></p>
 
