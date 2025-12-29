@@ -101,18 +101,18 @@ Diperlukan sistem yang mampu melakukan pemantauan tekanan secara real-time dan b
 Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan dini ketika tekanan melebihi ambang batas tertentu. Integrasi dengan Robot Operating System 2 (ROS 2) memungkinkan sistem ini dikembangkan menjadi pemantauan terpusat, sehingga meningkatkan efektivitas dan kecepatan respon dalam pemantauan pasien.
 
 <section>
-  <h2>Diagram Alir Sistem</h2>
+  <h4>Diagram Alir Sistem</h4>
   <img src="images/gambar12.png">
  <section> 
 
    <section>
-  <h2>Alat dan Bahan</h2>
-  <h3>Perangkat Keras (Hardware)</h3>
+  <h5>Alat dan Bahan</h5>
+  <h6>Perangkat Keras (Hardware)</h6>
   <ul>
   <img src="images/tabel2.png"> 
   </ul>
 
-  <h3>Perangkat Lunak (Software)</h3>
+  <h6>Perangkat Lunak (Software)</h6>
   <ul>
     <img src="images/tabel1.png">
   </ul>
