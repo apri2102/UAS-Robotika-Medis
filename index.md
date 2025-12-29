@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="id">
 <head>
   <meta charset="UTF-8">
@@ -79,7 +79,6 @@
     Seiring berkembangnya teknologi robotika medis dan sistem cerdas, diperlukan alat pemantauan yang mampu bekerja secara real-time, responsif, dan terintegrasi. Smart Pressure Alert System dikembangkan sebagai solusi berbasis sensor Force Sensitive Resistor (FSR) untuk mendeteksi perubahan tekanan secara akurat. Sistem ini dilengkapi dengan buzzer sebagai peringatan dini ketika tekanan melebihi ambang batas yang ditentukan.
     Integrasi sistem dengan Robot Operating System 2 (ROS 2) memungkinkan pengolahan dan pengembangan data lebih lanjut, seperti monitoring terpusat dan analisis pola tekanan. Dengan desain yang sederhana dan biaya yang relatif rendah, sistem ini memiliki potensi sebagai alat bantu pemantauan pasien yang efektif, sekaligus mendukung penerapan teknologi robotika medis dalam lingkungan pelayanan kesehatan.
   </p>
-</section>
 
 </section>
 <h2>Pentingnya Smart Pressure Alert System</h2>
@@ -89,7 +88,6 @@
   </p>
   
   <h3>Risiko Keterlambatan Penanganan</h3>
-   </p>
    Tekanan yang tidak terpantau dapat berkembang menjadi masalah serius apabila penanganan dilakukan terlambat. Keterlambatan dalam mengetahui perubahan tekanan tubuh pasien dapat memperburuk kondisi klinis dan memperpanjang masa perawatan.
    
    <h3>Keterbatasan Pemantauan Manual</h3>
