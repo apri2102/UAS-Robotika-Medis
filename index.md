@@ -96,9 +96,9 @@
    </p>
    Pemantauan tekanan tubuh pasien secara manual memiliki keterbatasan karena tidak dapat dilakukan secara kontinu dan sangat bergantung pada kehadiran serta ketelitian tenaga medis. Hal ini meningkatkan risiko terlewatnya kondisi abnormal pada pasien.
     
-    <h3>Kebutuhan Sistem Pemantauan Real-Time</h3>
+  <h3>Kebutuhan Sistem Pemantauan Real-Time</h3>
    </p>
-   Diperlukan sistem yang mampu melakukan pemantauan tekanan secara real-time dan berkelanjungan. Penggunaan sensor Force Sensitive Resistor (FSR) memungkinkan pembacaan tekanan secara langsung dan responsif terhadap perubahan kondisi pasien.
+   Diperlukan sistem yang mampu melakukan pemantauan tekanan secara real-time dan berkelanjungan. Penggunaan sensor Force Sensitive Resistor (FSR)              memungkinkan pembacaan tekanan secara langsung dan responsif terhadap perubahan kondisi pasien.
  
   <h3>Sistem Peringatan Dini Berbasis Teknologi</h3>
    </p> 
