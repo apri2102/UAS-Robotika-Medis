@@ -175,47 +175,68 @@
     ROS 2 digunakan sebagai middleware komunikasi antara node publisher dan
     subscriber.
   </p>
+  Langkah-langkah:
   <ul>
+  <p>
     <li>Menambahkan locale sistem</li>
+    <img src="images/Gambar4.png">
     <li>Menambahkan repository resmi ROS 2</li>
+    <img src="images/gambar5.png">
     <li>Menginstal ROS 2 Jazzy Jalisco</li>
+    <img src="images/gambar6.png">
     <li>Melakukan setup environment</li>
+    <img src="images/gambar7.png">
   </ul>
-  <p><i>(Gambar: Instalasi ROS 2 Jazzy)</i></p>
 
   <h3>6. Instalasi Docker Desktop</h3>
   <p>
     Docker digunakan untuk menjalankan micro-ROS agent secara terisolasi.
   </p>
+  Langkah-langkah:
   <ul>
-    <li>Mengunduh Docker Desktop for Windows</li>
-    <li>Melakukan instalasi dan restart jika diperlukan</li>
+  <p>
+    <li>Unduh Docker Desktop for Windows</li>
+    <li>Lakukan instalasi dan restart jika diperlukan</li>
   </ul>
-  <p><i>(Gambar: Instalasi Docker Desktop)</i></p>
+  <img src="images/gambar8.png">
+  </ul>
 
   <h3>7. Menjalankan micro-ROS Agent</h3>
   <p>
     Micro-ROS Agent berfungsi sebagai penghubung antara mikrokontroler ESP32
     dan ROS 2.
   </p>
-  <p><i>(Gambar: micro-ROS agent berjalan di Docker)</i></p>
+  Jalankan container:
+  <ul>
+  <p>
+  <img src="images/gambar9.png">
+  </ul>
 
   <h3>8. Instalasi Arduino IDE</h3>
   <p>
     Arduino IDE digunakan untuk pemrograman ESP32 dan pembacaan sensor FSR.
   </p>
+   Langkah-langkah:
   <ul>
+  <p>
     <li>Instalasi Arduino IDE</li>
     <li>Penambahan board ESP32</li>
     <li>Instalasi library pendukung sensor FSR</li>
   </ul>
-  <p><i>(Gambar: Tampilan Arduino IDE)</i></p>
 
   <h3>9. Instalasi Python</h3>
   <p>
     Python digunakan untuk pengembangan node ROS 2 dan monitoring data sensor.
   </p>
-  <p><i>(Gambar: Pemeriksaan versi Python)</i></p>
+  Pastikan Pyhton terinstal:
+  <ul>
+  <p>
+  <img src="images/gambar10.png"> 
+  </p>
+  Jika belum, lakukan:
+  <ul>
+  <p>
+   <img src="images/gambar11.png">   
 </section>
 
 <section>
