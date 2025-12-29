@@ -107,7 +107,7 @@
 
 <section>
   <h2>Diagram Alir Sistem</h2>
-  <img src="images/Gambar3.png">
+  <img src="images/gambar12.png">
  <section> 
 
    <section>
