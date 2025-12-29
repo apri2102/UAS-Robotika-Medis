@@ -136,12 +136,14 @@
     WSL 2 memungkinkan menjalankan sistem operasi Linux langsung di dalam
     Windows tanpa dual boot.
   </p>
+  Langkah-langkah:
   <ul>
-    <li>Membuka PowerShell sebagai Administrator</li>
-    <li>Menjalankan perintah aktivasi WSL</li>
+  <p>
+    <li>Buka PowerShell sebagai Administrator</li>
+    <li>Jalankan perintah aktivasi WSL</li>
     <img src="images/gambar1.png">
-    <li>Melakukan restart sistem komputer</li>
-    <li>Memastikan WSL menggunakan versi 2</li>
+    <li>Lakukan restart sistem komputer</li>
+    <li>Pastikan WSL menggunakan versi 2</li>
     <img src="images/Gambar2.png">  
   </ul>
 
@@ -149,19 +151,24 @@
   <p>
     Ubuntu digunakan sebagai sistem operasi Linux utama untuk menjalankan ROS 2.
   </p>
+    Langkah-langkah:
   <ul>
-    <li>Mengunduh Ubuntu 24.04 LTS melalui Microsoft Store</li>
+  <p>
+    <li>Unduh Ubuntu 24.04 LTS melalui Microsoft Store</li>
     <li>Lakukan Instal dan jalankan</li>
     <li>Buat username dan password pada Linux</li>
   </ul>
-  <p><i>(Gambar: Instalasi Ubuntu di WSL)</i></p>
 
   <h3>4. Update Sistem Ubuntu</h3>
   <p>
     Update sistem dilakukan untuk memastikan seluruh package berada pada versi
     terbaru sebelum instalasi ROS 2.
   </p>
-  <p><i>(Gambar: Proses update Ubuntu)</i></p>
+    Kode:
+  <ul>
+  <p><i>
+  <img src="images/Gambar3.png">
+   </ul>
 
   <h3>5. Instalasi ROS 2 Jazzy Jalisco</h3>
   <p>
