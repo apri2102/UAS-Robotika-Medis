@@ -92,7 +92,6 @@ Tekanan yang tidak terpantau dapat berkembang menjadi masalah serius apabila pen
    </p>
    
    <h3>Keterbatasan Pemantauan Manual</h3>
-   </p>
 Pemantauan tekanan tubuh pasien secara manual memiliki keterbatasan karena tidak dapat dilakukan secara kontinu dan sangat bergantung pada kehadiran serta ketelitian tenaga medis. Hal ini meningkatkan risiko terlewatnya kondisi abnormal pada pasien.
    </p>
    
