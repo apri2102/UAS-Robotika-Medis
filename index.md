@@ -106,6 +106,11 @@
 </section>
 
 <section>
+  <h2>Diagram ALir Sistem</h2>
+  <img src="images/Gambar3.png">
+ <section> 
+
+   <section>
   <h2>Alat dan Bahan</h2>
   <h3>Perangkat Keras</h3>
   <ul>
