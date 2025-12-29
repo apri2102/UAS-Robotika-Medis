@@ -116,150 +116,127 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
 
 <section>
 
- <h2>Tahap I – Environment Setup</h2>
+<h2>Tahap I - Environment Setup</h2>
+  <p>
+    Tahap ini bertujuan untuk menyiapkan lingkungan kerja perangkat lunak
+    agar sistem dapat dikembangkan, dijalankan, dan diintegrasikan dengan
+    ROS 2 secara optimal.
+  </p>
 
-<p>
-Tahap ini bertujuan untuk menyiapkan lingkungan kerja perangkat lunak agar sistem
-dapat dikembangkan, dijalankan, dan diintegrasikan dengan ROS 2 secara optimal.
-</p>
+  <h3>1. Menyiapkan Sistem Operasi Utama (Windows 11)</h3>
+  <p>
+    Windows 11 digunakan sebagai host system (sistem utama) untuk menjalankan
+    seluruh proses pengembangan.
+  </p>
+    Fungsi Utama:
+  <ul>
+  <p> 
+    <li>Menjalankan Arduino IDE</li>
+    <li>Menjalankan Docker Desktop</li>
+    <li>Menjalankan WSL 2 sebagai jembatan ke Linux</li>
+  <p>
+    <b>Catatan:</b> Pastikan Windows sudah ter-update, virtualisasi aktif di BIOS,
+    dan RAM minimal 8 GB.
+  </p>
 
-<h3>1. Menyiapkan Sistem Operasi Utama (Windows 11)</h3>
-<p>
-Windows 11 digunakan sebagai host system (sistem utama) untuk menjalankan seluruh proses pengembangan.
-</p>
+  <h3>2. Mengaktifkan WSL 2 (Windows Subsystem for Linux)</h3>
+  <p>
+    WSL 2 memungkinkan menjalankan sistem operasi Linux langsung di dalam
+    Windows tanpa dual boot.
+  </p>
+  Langkah-langkah:
+  <ul>
+  <p>
+    <li>Buka PowerShell sebagai Administrator</li>
+    <li>Jalankan perintah aktivasi WSL</li>
+    <img src="images/gambar1.png">
+    <li>Lakukan restart sistem komputer</li>
+    <li>Pastikan WSL menggunakan versi 2</li>
+    <img src="images/Gambar2.png">  
 
-<p><b>Fungsi Utama:</b></p>
-<ul>
-  <li>Menjalankan Arduino IDE</li>
-  <li>Menjalankan Docker Desktop</li>
-  <li>Menjalankan WSL 2 sebagai jembatan ke Linux</li>
-</ul>
+  <h3>3. Instalasi Ubuntu 24.04 LTS</h3>
+  <p>
+    Ubuntu digunakan sebagai sistem operasi Linux utama untuk menjalankan ROS 2.
+  </p>
+    Langkah-langkah:
+  <ul>
+  <p>
+    <li>Unduh Ubuntu 24.04 LTS melalui Microsoft Store</li>
+    <li>Lakukan Instal dan jalankan</li>
+    <li>Buat username dan password pada Linux</li>
 
-<p>
-<b>Catatan:</b> Pastikan Windows sudah ter-update, virtualisasi aktif di BIOS,
-dan RAM minimal 8 GB.
-</p>
+  <h3>4. Update Sistem Ubuntu</h3>
+  <p>
+    Update sistem dilakukan untuk memastikan seluruh package berada pada versi
+    terbaru sebelum instalasi ROS 2.
+  </p>
+    Kode:
+  <ul>
+  <p><i>
+  <img src="images/Gambar3.png">
 
-<hr>
+  <h3>5. Instalasi ROS 2 Jazzy Jalisco</h3>
+  <p>
+    ROS 2 digunakan sebagai middleware komunikasi antara node publisher dan
+    subscriber.
+  </p>
+  Langkah-langkah:
+  <ul>
+  <p>
+    <li>Menambahkan locale sistem</li>
+    <img src="images/gambar4.png">
+    <li>Menambahkan repository resmi ROS 2</li>
+    <img src="images/gambar5.png">
+    <li>Menginstal ROS 2 Jazzy Jalisco</li>
+    <img src="images/gambar6.png">
+    <li>Melakukan setup environment</li>
+    <img src="images/gambar7.png">
+  </ul>
 
-<h3>2. Mengaktifkan WSL 2 (Windows Subsystem for Linux)</h3>
-<p>
-WSL 2 memungkinkan menjalankan sistem operasi Linux langsung di dalam Windows tanpa dual boot.
-</p>
+  <h3>6. Instalasi Docker Desktop</h3>
+  <p>
+    Docker digunakan untuk menjalankan micro-ROS agent secara terisolasi.
+  </p>
+  Langkah-langkah:
+  <ul>
+  <p>
+    <li>Unduh Docker Desktop for Windows</li>
+    <li>Lakukan instalasi dan restart jika diperlukan</li>
+    <img src="images/gambar8.png">
 
-<p><b>Langkah-langkah:</b></p>
-<ul>
-  <li>Buka PowerShell sebagai Administrator</li>
-  <li>Jalankan perintah aktivasi WSL</li>
-</ul>
+  <h3>7. Menjalankan micro-ROS Agent</h3>
+  <p>
+    Micro-ROS Agent berfungsi sebagai penghubung antara mikrokontroler ESP32
+    dan ROS 2.
+  </p>
+  Jalankan container:
+  <ul>
+  <p>
+  <img src="images/gambar9.png">
 
-<img src="images/gambar1.png" alt="Aktivasi WSL">
+  <h3>8. Instalasi Arduino IDE</h3>
+  <p>
+    Arduino IDE digunakan untuk pemrograman ESP32 dan pembacaan sensor FSR.
+  </p>
+   Langkah-langkah:
+  <ul>
+  <p>
+    <li>Instalasi Arduino IDE</li>
+    <li>Penambahan board ESP32</li>
+    <li>Instalasi library pendukung sensor FSR</li>
 
-<ul>
-  <li>Lakukan restart sistem komputer</li>
-  <li>Pastikan WSL menggunakan versi 2</li>
-</ul>
-
-<img src="images/gambar2.png" alt="WSL Version">
-
-<hr>
-
-<h3>3. Instalasi Ubuntu 24.04 LTS</h3>
-<p>
-Ubuntu digunakan sebagai sistem operasi Linux utama untuk menjalankan ROS 2.
-</p>
-
-<ul>
-  <li>Unduh Ubuntu 24.04 LTS melalui Microsoft Store</li>
-  <li>Lakukan instalasi dan jalankan</li>
-  <li>Buat username dan password Linux</li>
-</ul>
-
-<hr>
-
-<h3>4. Update Sistem Ubuntu</h3>
-<p>
-Update sistem dilakukan untuk memastikan seluruh package berada pada versi terbaru sebelum instalasi ROS 2.
-</p>
-
-<img src="images/gambar3.png" alt="Update Ubuntu">
-
-<hr>
-
-<h3>5. Instalasi ROS 2 Jazzy Jalisco</h3>
-<p>
-ROS 2 digunakan sebagai middleware komunikasi antara node publisher dan subscriber.
-</p>
-
-<ul>
-  <li>Menambahkan locale sistem</li>
-</ul>
-<img src="images/gambar4.png">
-
-<ul>
-  <li>Menambahkan repository resmi ROS 2</li>
-</ul>
-<img src="images/gambar5.png">
-
-<ul>
-  <li>Menginstal ROS 2 Jazzy Jalisco</li>
-</ul>
-<img src="images/gambar6.png">
-
-<ul>
-  <li>Melakukan setup environment</li>
-</ul>
-<img src="images/gambar7.png">
-
-<hr>
-
-<h3>6. Instalasi Docker Desktop</h3>
-<p>
-Docker digunakan untuk menjalankan micro-ROS Agent secara terisolasi.
-</p>
-
-<ul>
-  <li>Unduh Docker Desktop for Windows</li>
-  <li>Lakukan instalasi dan restart jika diperlukan</li>
-</ul>
-
-<img src="images/gambar8.png">
-
-<hr>
-
-<h3>7. Menjalankan micro-ROS Agent</h3>
-<p>
-Micro-ROS Agent berfungsi sebagai penghubung antara mikrokontroler ESP32 dan ROS 2.
-</p>
-
-<img src="images/gambar9.png">
-
-<hr>
-
-<h3>8. Instalasi Arduino IDE</h3>
-<p>
-Arduino IDE digunakan untuk pemrograman ESP32 dan pembacaan sensor FSR.
-</p>
-
-<ul>
-  <li>Instalasi Arduino IDE</li>
-  <li>Penambahan board ESP32</li>
-  <li>Instalasi library pendukung</li>
-</ul>
-
-<hr>
-
-<h3>9. Instalasi Python</h3>
-<p>
-Python digunakan untuk pengembangan node ROS 2 dan monitoring data sensor.
-</p>
-
-<img src="images/gambar10.png">
-
-<p>Jika belum terinstal:</p>
-<img src="images/gambar11.png">
-
-<hr>
+  <h3>9. Instalasi Python</h3>
+  <p>
+    Python digunakan untuk pengembangan node ROS 2 dan monitoring data sensor.
+  </p>
+    Pastikan Pyhton terinstal:
+  <ul>
+  <p>
+    <img src="images/gambar10.png"> 
+  </p>
+  Jika belum, lakukan:
+  <p>
+   <img src="images/gambar11.png">
 
 <h2>Tahap II – Perakitan dan Persiapan Perangkat Keras</h2>
 
