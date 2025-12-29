@@ -107,6 +107,108 @@
 </section>
 
 <section>
+  <h2>Tahap I – Environment Setup</h2>
+  <p>
+    Tahap ini bertujuan untuk menyiapkan lingkungan kerja perangkat lunak
+    agar sistem dapat dikembangkan, dijalankan, dan diintegrasikan dengan
+    ROS 2 secara optimal.
+  </p>
+
+  <h3>1. Menyiapkan Sistem Operasi Utama (Windows 11)</h3>
+  <p>
+    Windows 11 digunakan sebagai host system (sistem utama) untuk menjalankan
+    seluruh proses pengembangan.
+  </p>
+  <ul>
+    <li>Menjalankan Arduino IDE</li>
+    <li>Menjalankan Docker Desktop</li>
+    <li>Menjalankan WSL 2 sebagai jembatan ke Linux</li>
+  </ul>
+  <p>
+    <b>Catatan:</b> Pastikan Windows sudah ter-update, virtualisasi aktif di BIOS,
+    dan RAM minimal 8 GB.
+  </p>
+  <p><i>(Gambar: Tampilan sistem Windows 11)</i></p>
+
+  <h3>2. Mengaktifkan WSL 2 (Windows Subsystem for Linux)</h3>
+  <p>
+    WSL 2 memungkinkan menjalankan sistem operasi Linux langsung di dalam
+    Windows tanpa dual boot.
+  </p>
+  <ul>
+    <li>Membuka PowerShell sebagai Administrator</li>
+    <li>Menjalankan perintah aktivasi WSL</li>
+    <li>Melakukan restart sistem</li>
+    <li>Memastikan WSL menggunakan versi 2</li>
+  </ul>
+  <p><i>(Gambar: Aktivasi WSL 2 melalui PowerShell)</i></p>
+
+  <h3>3. Instalasi Ubuntu 24.04 LTS</h3>
+  <p>
+    Ubuntu digunakan sebagai sistem operasi Linux utama untuk menjalankan ROS 2.
+  </p>
+  <ul>
+    <li>Mengunduh Ubuntu 24.04 LTS melalui Microsoft Store</li>
+    <li>Mengatur username dan password Linux</li>
+  </ul>
+  <p><i>(Gambar: Instalasi Ubuntu di WSL)</i></p>
+
+  <h3>4. Update Sistem Ubuntu</h3>
+  <p>
+    Update sistem dilakukan untuk memastikan seluruh package berada pada versi
+    terbaru sebelum instalasi ROS 2.
+  </p>
+  <p><i>(Gambar: Proses update Ubuntu)</i></p>
+
+  <h3>5. Instalasi ROS 2 Jazzy Jalisco</h3>
+  <p>
+    ROS 2 digunakan sebagai middleware komunikasi antara node publisher dan
+    subscriber.
+  </p>
+  <ul>
+    <li>Menambahkan locale sistem</li>
+    <li>Menambahkan repository resmi ROS 2</li>
+    <li>Menginstal ROS 2 Jazzy Jalisco</li>
+    <li>Melakukan setup environment</li>
+  </ul>
+  <p><i>(Gambar: Instalasi ROS 2 Jazzy)</i></p>
+
+  <h3>6. Instalasi Docker Desktop</h3>
+  <p>
+    Docker digunakan untuk menjalankan micro-ROS agent secara terisolasi.
+  </p>
+  <ul>
+    <li>Mengunduh Docker Desktop for Windows</li>
+    <li>Melakukan instalasi dan restart jika diperlukan</li>
+  </ul>
+  <p><i>(Gambar: Instalasi Docker Desktop)</i></p>
+
+  <h3>7. Menjalankan micro-ROS Agent</h3>
+  <p>
+    Micro-ROS Agent berfungsi sebagai penghubung antara mikrokontroler ESP32
+    dan ROS 2.
+  </p>
+  <p><i>(Gambar: micro-ROS agent berjalan di Docker)</i></p>
+
+  <h3>8. Instalasi Arduino IDE</h3>
+  <p>
+    Arduino IDE digunakan untuk pemrograman ESP32 dan pembacaan sensor FSR.
+  </p>
+  <ul>
+    <li>Instalasi Arduino IDE</li>
+    <li>Penambahan board ESP32</li>
+    <li>Instalasi library pendukung sensor FSR</li>
+  </ul>
+  <p><i>(Gambar: Tampilan Arduino IDE)</i></p>
+
+  <h3>9. Instalasi Python</h3>
+  <p>
+    Python digunakan untuk pengembangan node ROS 2 dan monitoring data sensor.
+  </p>
+  <p><i>(Gambar: Pemeriksaan versi Python)</i></p>
+</section>
+
+<section>
   <h2>Langkah Pembuatan Sistem</h2>
   <p><b>Hardware:</b></p>
   <ul>
