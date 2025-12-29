@@ -111,13 +111,10 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
   <h3>Perangkat Keras (Hardware)</h3>
   <p>
   <img src="images/tabel2.png"> 
-  </ul>
 
   <h3>Perangkat Lunak (Software)</h3>
   <p>
   <img src="images/tabel1.png">
-  </ul>
-</section>
 
 <section>
   <h2>Tahap I – Environment Setup</h2>
