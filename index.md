@@ -83,6 +83,15 @@
   </p>
 </section>
 
+</section>
+<h2>Pentingnya Smart Pressure Alert System</h2>
+  <p>
+    Pemantauan tekanan pada pasien merupakan hal penting, terutama untuk mencegah kondisi berisiko seperti posisi tubuh yang tidak tepat, tekanan berlebih,      dan potensi luka tekan (pressure ulcer) akibat posisi statis dalam waktu lama. Namun, pemantauan secara manual tidak selalu dapat dilakukan secara           terus-menerus.
+    Smart Pressure Alert System hadir sebagai solusi pemantauan real-time dan berkelanjutan menggunakan sensor Force Sensitive Resistor (FSR). Sistem ini        mampu mendeteksi tekanan berlebih secara dini dan memberikan peringatan langsung melalui buzzer, sehingga tindakan korektif dapat segera dilakukan           sebelum kondisi pasien memburuk.
+    Dengan integrasi ke ROS 2, sistem ini tidak hanya berfungsi sebagai alarm lokal, tetapi juga dapat dikembangkan menjadi sistem monitoring terpusat. Oleh     karena itu, alat ini memiliki urgensi sebagai sistem peringatan dini yang sederhana, responsif, dan aplikatif dalam pemantauan pasien.
+  </p>
+</section>
+
 <section>
   <h2>Alat dan Bahan</h2>
   <h3>Perangkat Keras</h3>
