@@ -319,6 +319,122 @@ serta memberikan peringatan otomatis melalui buzzer ketika tekanan melebihi amba
 <p><strong>Catatan:</strong> Buzzer berfungsi sebagai alarm peringatan dini untuk membantu tenaga medis mendeteksi kondisi tekanan  pada pasien secara cepat.</p>
 </section>
 
+<!-- Tahap IV -->
+<section>
+ <h2>TAHAP IV – Implementasi Logic Node</h2>
+  <p>
+    Tahap ini menjelaskan langkah-langkah membuat dan menjalankan Logic Node pada ROS 2
+     untuk mengelola tekanan serta mengaktifkan alarm jika terdapat tekanan pada sensor.
+ </p>
+
+ <h3>1. Buka Terminal Ubuntu & Aktifkan ROS 2</h3>
+ <p>
+ Jalankan perintah berikut setiap membuka terminal baru:
+ <img src="images/gambar14.png"> 
+ </p>
+    
+    <h3>2. Buat ROS 2 Workspace</h3>
+    <pre><code>mkdir -p ~/incubator_ws/src
+cd ~/incubator_ws
+colcon build
+source install/setup.bash</code></pre>
+
+    <h3>3. Buat Package ROS 2 (Python)</h3>
+    <pre><code>cd ~/incubator_ws/src
+ros2 pkg create incubator_logic --build-type ament_python --dependencies rclpy std_msgs</code></pre>
+
+    <h3>4. Masuk ke Folder Package</h3>
+    <pre><code>cd incubator_logic/incubator_logic</code></pre>
+
+    <h3>5. Buat File Python Logic Node</h3>
+    <pre><code>nano logic_node.py</code></pre>
+
+    <h3>6. Script Python (Logic Node)</h3>
+    <pre><code>import rclpy
+from rclpy.node import Node
+from std_msgs.msg import Float32, String, Bool
+
+class IncubatorLogicNode(Node):
+    def __init__(self):
+        super().__init__('incubator_logic_node')
+        self.temp_min = 32.0
+        self.temp_max = 36.0
+        self.hum_min = 40.0
+        self.hum_max = 60.0
+        self.temperature = None
+        self.humidity = None
+        self.create_subscription(Float32, '/incubator/temperature', self.temperature_callback, 10)
+        self.create_subscription(Float32, '/incubator/humidity', self.humidity_callback, 10)
+        self.status_pub = self.create_publisher(String, '/incubator/status', 10)
+        self.alarm_pub = self.create_publisher(Bool, '/incubator/alarm', 10)
+        self.get_logger().info("Incubator Logic Node started")
+
+    def temperature_callback(self, msg):
+        self.temperature = msg.data
+        self.evaluate_condition()
+
+    def humidity_callback(self, msg):
+        self.humidity = msg.data
+        self.evaluate_condition()
+
+    def evaluate_condition(self):
+        if self.temperature is None or self.humidity is None:
+            return
+        status_msg = String()
+        alarm_msg = Bool()
+        if (self.temperature < self.temp_min or self.temperature > self.temp_max or
+            self.humidity < self.hum_min or self.humidity > self.hum_max):
+            status_msg.data = "DANGER"
+            alarm_msg.data = True
+        else:
+            status_msg.data = "NORMAL"
+            alarm_msg.data = False
+        self.status_pub.publish(status_msg)
+        self.alarm_pub.publish(alarm_msg)
+        self.get_logger().info(f"Temp: {self.temperature} | Hum: {self.humidity} | Status: {status_msg.data}")
+
+def main(args=None):
+    rclpy.init(args=args)
+    node = IncubatorLogicNode()
+    rclpy.spin(node)
+    node.destroy_node()
+    rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()</code></pre>
+
+    <p>Tekan <strong>CTRL + O → ENTER → CTRL + X</strong> untuk menyimpan file.</p>
+
+    <h3>7. Edit <code>setup.py</code> agar Node Bisa Dijalankan</h3>
+    <pre><code>nano ../setup.py
+# Tambahkan entry_points:
+entry_points={
+    'console_scripts': [
+        'logic_node = incubator_logic.logic_node:main',
+    ],
+},</code></pre>
+
+    <h3>8. Build Ulang Workspace</h3>
+    <pre><code>cd ~/incubator_ws
+colcon build
+source install/setup.bash</code></pre>
+
+    <h3>9. Jalankan Logic Node</h3>
+    <pre><code>ros2 run incubator_logic logic_node</code></pre>
+    <p>Jika berhasil, akan muncul:</p>
+    <pre><code>[INFO] Incubator Logic Node started</code></pre>
+
+    <h3>10. Uji Node (Manual dari Terminal)</h3>
+    <p>Kirim data suhu:</p>
+    <pre><code>ros2 topic pub /incubator/temperature std_msgs/Float32 "{data: 37.0}"</code></pre>
+    <p>Kirim data kelembapan:</p>
+    <pre><code>ros2 topic pub /incubator/humidity std_msgs/Float32 "{data: 65.0}"</code></pre>
+    <p>Cek status:</p>
+    <pre><code>ros2 topic echo /incubator/status</code></pre>
+    <p>Cek alarm:</p>
+    <pre><code>ros2 topic echo /incubator/alarm</code></pre>
+</section>
+
     
 </body>
 </html>
