@@ -362,24 +362,23 @@ serta memberikan peringatan otomatis melalui buzzer ketika tekanan melebihi amba
  </p>
 
 <h3>8. Build Ulang Workspace</h3>
-    <pre><code>cd ~/incubator_ws
-colcon build
-source install/setup.bash</code></pre>
+ <img src="images/gambar21.png"> 
+ </p>
 
-    <h3>9. Jalankan Logic Node</h3>
-    <pre><code>ros2 run incubator_logic logic_node</code></pre>
-    <p>Jika berhasil, akan muncul:</p>
-    <pre><code>[INFO] Incubator Logic Node started</code></pre>
+ <h3>9. Jalankan Logic Node</h3>
+  <img src="images/gambar22.png"> 
+ </p>
 
-    <h3>10. Uji Node (Manual dari Terminal)</h3>
-    <p>Kirim data suhu:</p>
-    <pre><code>ros2 topic pub /incubator/temperature std_msgs/Float32 "{data: 37.0}"</code></pre>
-    <p>Kirim data kelembapan:</p>
-    <pre><code>ros2 topic pub /incubator/humidity std_msgs/Float32 "{data: 65.0}"</code></pre>
-    <p>Cek status:</p>
-    <pre><code>ros2 topic echo /incubator/status</code></pre>
-    <p>Cek alarm:</p>
-    <pre><code>ros2 topic echo /incubator/alarm</code></pre>
+ <h3>10. Uji Node (Manual dari Terminal)</h3>
+  <p>Kirim data tekanan:</p>
+   <img src="images/gambar23.png"> 
+ </p> 
+  
+ <p>Cek status tekanan:</p>
+ <img src="images/gambar24.png"> 
+
+ <p>Cek alarm:</p>
+ <img src="images/gambar25.png"> 
 </section>
 
     
