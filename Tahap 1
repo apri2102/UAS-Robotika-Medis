@@ -1,0 +1,180 @@
+Tahap I – Environment Setup
+
+Tahap ini bertujuan untuk menyiapkan lingkungan kerja perangkat lunak agar sistem dapat dikembangkan, dijalankan, dan diintegrasikan dengan ROS 2 secara optimal.
+
+1️⃣ Menyiapkan Sistem Operasi Utama (Windows 11)
+
+Windows 11 digunakan sebagai host system (sistem utama) untuk menjalankan seluruh proses pengembangan.
+
+Fungsi Utama:
+
+Menjalankan Arduino IDE
+
+Menjalankan Docker Desktop
+
+Menjalankan WSL 2 sebagai jembatan ke Linux
+
+Pastikan:
+
+Windows 11 sudah ter-update
+
+Virtualization aktif di BIOS
+
+RAM minimal 8 GB (disarankan)
+
+📷 Gambar: Tampilan spesifikasi dan status Windows 11
+
+2️⃣ Mengaktifkan WSL 2 (Windows Subsystem for Linux)
+
+WSL 2 memungkinkan menjalankan Linux langsung di dalam Windows tanpa dual boot.
+
+Langkah-langkah:
+
+Buka PowerShell (Run as Administrator)
+
+Jalankan perintah berikut:
+
+wsl --install
+
+
+Restart komputer
+
+Pastikan WSL menggunakan versi 2:
+
+wsl --list --verbose
+
+
+📷 Gambar: Hasil pengecekan versi WSL
+
+3️⃣ Instalasi Ubuntu 24.04 LTS (OS Guest)
+
+Ubuntu digunakan sebagai lingkungan Linux utama untuk menjalankan ROS 2.
+
+Langkah-langkah:
+
+Buka Microsoft Store
+
+Cari Ubuntu 24.04 LTS
+
+Install dan jalankan Ubuntu
+
+Buat username dan password Linux
+
+📷 Gambar: Tampilan awal Ubuntu 24.04 LTS
+
+4️⃣ Update Sistem Ubuntu
+
+Update sistem dilakukan untuk memastikan seluruh paket berada pada versi terbaru.
+
+Kode:
+sudo apt update && sudo apt upgrade -y
+
+
+📷 Gambar: Proses update sistem Ubuntu
+
+5️⃣ Instalasi ROS 2 Jazzy Jalisco
+
+ROS 2 digunakan sebagai middleware komunikasi antara sistem dan mikrokontroler.
+
+a) Menambahkan locale
+sudo apt install locales -y
+sudo locale-gen en_US en_US.UTF-8
+sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+
+📷 Gambar: Setup locale ROS 2
+
+b) Menambahkan repository ROS 2
+sudo apt install software-properties-common -y
+sudo add-apt-repository universe
+
+sudo apt install curl -y
+sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key \
+-o /usr/share/keyrings/ros-archive-keyring.gpg
+
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] \
+http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" | \
+sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+
+
+📷 Gambar: Penambahan repository ROS 2
+
+c) Instalasi ROS 2 Jazzy
+sudo apt update
+sudo apt install ros-jazzy-desktop -y
+
+
+📷 Gambar: Proses instalasi ROS 2 Jazzy
+
+d) Setup environment ROS 2
+source /opt/ros/jazzy/setup.bash
+
+
+(Optional – otomatis saat terminal dibuka)
+
+echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
+
+
+📷 Gambar: Setup environment ROS 2
+
+6️⃣ Instalasi Docker Desktop
+
+Docker digunakan untuk menjalankan micro-ros-agent secara terisolasi.
+
+Langkah-langkah:
+
+Download Docker Desktop for Windows
+
+Install dan aktifkan WSL Integration
+
+Restart jika diminta
+
+📷 Gambar: Tampilan Docker Desktop
+
+7️⃣ Menjalankan micro-ros-agent (Docker)
+
+Micro-ROS Agent berfungsi sebagai penghubung antara mikrokontroler dan ROS 2.
+
+Perintah:
+docker run -it --rm --net=host microros/micro-ros-agent:jazzy udp4 --port 8888
+
+
+📷 Gambar: micro-ROS agent berjalan di terminal
+
+8️⃣ Instalasi Arduino IDE
+
+Arduino IDE digunakan untuk pemrograman mikrokontroler.
+
+Langkah-langkah:
+
+Download dan install Arduino IDE
+
+Tambahkan board ESP32
+
+Install library FSR
+
+Kode uji koneksi:
+void setup() {
+  Serial.begin(115200);
+}
+
+void loop() {
+  Serial.println("ESP32 Connected");
+  delay(1000);
+}
+
+
+📷 Gambar: Arduino IDE dan hasil Serial Monitor
+
+9️⃣ Instalasi Python (untuk ROS 2 Node)
+
+Python digunakan untuk pembuatan node ROS 2, monitoring, dan otomasi.
+
+Cek Python:
+python3 --version
+
+
+Jika belum terinstall:
+
+sudo apt install python3 python3-pip -y
