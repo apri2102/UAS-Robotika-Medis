@@ -137,7 +137,7 @@
   <ul>
     <li>Membuka PowerShell sebagai Administrator</li>
     <li>Menjalankan perintah aktivasi WSL</li>
-    !(images/gambar1.png)
+    <img src="images/gambar1.png">
     <li>Melakukan restart sistem</li>
     <li>Memastikan WSL menggunakan versi 2</li>
   </ul>
