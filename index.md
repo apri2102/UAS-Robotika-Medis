@@ -198,7 +198,7 @@
     <li>Unduh Docker Desktop for Windows</li>
     <li>Lakukan instalasi dan restart jika diperlukan</li>
   </ul>
-  <img src="images/gambar8.png">
+    <img src="images/gambar8.png">
   </ul>
 
   <h3>7. Menjalankan micro-ROS Agent</h3>
@@ -233,7 +233,7 @@
   <p>
     <img src="images/gambar10.png"> 
   </p>
-    Jika belum, lakukan:
+  Jika belum, lakukan:
   <p>
    <img src="images/gambar11.png">   
 </section>
