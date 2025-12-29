@@ -45,12 +45,7 @@
     ul {
       line-height: 1.8;
     }
-  </style>
-</head>
-<div style="max-width:900px; margin:auto;">
-  <!-- semua konten di sini -->
-</div>
-
+    
 <body>
 
 <header>
@@ -120,6 +115,11 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
   <img src="images/tabel1.png">
 
 <section>
+
+  <div style="max-width:900px; margin:auto;">
+  <!-- semua konten di sini -->
+</div>
+
   <h2>Tahap I - Environment Setup</h2>
   <p>
     Tahap ini bertujuan untuk menyiapkan lingkungan kerja perangkat lunak
