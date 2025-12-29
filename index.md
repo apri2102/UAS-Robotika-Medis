@@ -119,8 +119,9 @@
     Windows 11 digunakan sebagai host system (sistem utama) untuk menjalankan
     seluruh proses pengembangan.
   </p>
+    Fungsi Utama:
   <ul>
-    <b>Langkah-langkah:</b> 
+    
     <li>Menjalankan Arduino IDE</li>
     <li>Menjalankan Docker Desktop</li>
     <li>Menjalankan WSL 2 sebagai jembatan ke Linux</li>
