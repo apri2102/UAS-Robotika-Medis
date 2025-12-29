@@ -114,12 +114,12 @@
   <h2>Alat dan Bahan</h2>
   <h3>Perangkat Keras (Hardware)</h3>
   <ul>
-  <img src="images/tabel1.png"> 
+  <img src="images/tabel2.png"> 
   </ul>
 
   <h3>Perangkat Lunak (Software)</h3>
   <ul>
-    <img src="images/tabel2.png">
+    <img src="images/tabel1.png">
   </ul>
 </section>
 
