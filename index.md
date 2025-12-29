@@ -140,7 +140,7 @@
     <img src="images/gambar1.png">
     <li>Melakukan restart sistem komputer</li>
     <li>Memastikan WSL menggunakan versi 2</li>
-    <img src="images/gambar2.png">  
+    <img src="images/Gambar2.png">  
   </ul>
 
   <h3>3. Instalasi Ubuntu 24.04 LTS</h3>
