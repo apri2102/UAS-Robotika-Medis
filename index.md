@@ -106,30 +106,20 @@
 </section>
 
 <section>
-  <h2>Diagram ALir Sistem</h2>
+  <h2>Diagram Alir Sistem</h2>
   <img src="images/Gambar3.png">
  <section> 
 
    <section>
   <h2>Alat dan Bahan</h2>
-  <h3>Perangkat Keras</h3>
+  <h3>Perangkat Keras (Hardware)</h3>
   <ul>
-    <li>Force Sensitive Resistor (FSR)</li>
-    <li>ESP32</li>
-    <li>Buzzer</li>
-    <li>Resistor pendukung</li>
-    <li>Breadboard</li>
-    <li>Kabel jumper</li>
-    <li>Kabel USB</li>
+  <img src="images/tabel1.png"> 
   </ul>
 
-  <h3>Perangkat Lunak</h3>
+  <h3>Perangkat Lunak (Software)</h3>
   <ul>
-    <li>Ubuntu (WSL)</li>
-    <li>ROS 2</li>
-    <li>Arduino IDE</li>
-    <li>Python</li>
-    <li>GitHub Pages</li>
+    <img src="images/tabel2.png">
   </ul>
 </section>
 
