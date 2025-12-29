@@ -117,7 +117,7 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
   <img src="images/tabel1.png">
 
 <section>
-  <h2>Tahap I – Environment Setup</h2>
+  <h2>Tahap I - Environment Setup</h2>
   <p>
     Tahap ini bertujuan untuk menyiapkan lingkungan kerja perangkat lunak
     agar sistem dapat dikembangkan, dijalankan, dan diintegrasikan dengan
@@ -240,7 +240,7 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
    <img src="images/gambar11.png">   
 
 <section>
-  <h2>Langkah Pembuatan Sistem</h2>
+<h2>Langkah Pembuatan Sistem</h2>
   <p><b>Hardware:</b></p>
   <ul>
     <li>Menghubungkan sensor FSR ke ESP32 melalui pin analog</li>
@@ -258,7 +258,7 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
 </section>
 
 <section>
-  <h2>Kendala dan Solusi</h2>
+<h2>Kendala dan Solusi</h2>
   <ul>
     <li>
       <b>Kendala:</b> Integrasi ESP32 dengan ROS2<br>
